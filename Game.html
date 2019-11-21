@@ -35,7 +35,10 @@ user-scalable=no">
 /*-----------GOT THIS CODE TO CONSOLIDATE PROGRAM ONLINE---------*/                    
 /* https://stackoverflow.com/questions/45909017/consolidating-html-code-button */
 
-var gridSize = prompt("Pick a grid-size 3-10","3"), buttons=[], array_of_ids=[];
+do{
+var gridSize = prompt("Pick a grid-size 1-10","3"), buttons=[], array_of_ids=[];
+}
+while (grideSize < 1 || grideSize > 10 || Number.isInteger(grideSize) == false);
 
 for (var i=1;i<=gridSize;i++) {
   for (var j=1;j<=gridSize;j++) {
