@@ -128,9 +128,9 @@ if (nextSolution == 'O' && totalSeconds > 0 && changeColor()==(gridSize*gridSize
       document.getElementById("seconds").style.color = "darkred";
 
       document.getElementById("title").style.color = "red";
-      document.getElementById("count").style.color = "blue";
-      document.getElementById("stats").style.color = "blue";
-      document.getElementById("stats2").style.color = "blue";
+      document.getElementById("count").style.color = "black";
+      document.getElementById("stats").style.color = "black";
+      document.getElementById("stats2").style.color = "black";
 
       document.getElementById("button1").style.background='red';
       document.getElementById("button2").style.background='blue';
