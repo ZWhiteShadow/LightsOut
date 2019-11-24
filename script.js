@@ -1,5 +1,5 @@
 /*------------------------------CREATED BY WADE HELQUIST--------------------------
---------------------------------Created 8/29/2017------------------------------*/
+--------------------------------LAST UPDATE 8/29/2017------------------------------*/
                     
 /*-----------GOT THIS CODE TO CONSOLIDATE PROGRAM ONLINE---------*/                    
 /* https://stackoverflow.com/questions/45909017/consolidating-html-code-button */
@@ -16,7 +16,7 @@ document.querySelector("#container").innerHTML=buttons.join("")
 /*----------------------------------------------------------------*/
 var count = 0, nextSolution = 'O', totalTime = 0, bestTime = 0;
 var time_string = "";
-document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' color='blue'><b> blue</b></font>.";
+document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' color='blue'><b> BLUE</b></font>.";
 changeColor();
 randomize (gridSize*gridSize);
 // Example of 5x5 squares for functions:
@@ -100,13 +100,43 @@ function solve(){
        /*------------IF RED NEXT SOLUTION IS BLUE--------*/
 if (nextSolution == 'X' && totalSeconds > 0 && changeColor()==(gridSize*gridSize)){   
       nextSolution = 'O';
-      document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' font color='blue'><b> blue.</font></b>";
-      solveEnd();
+      document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' font color='blue'><b> BLUE</font></b>";
+     
+      document.getElementById("time").style.color = "darkblue";
+      document.getElementById("minutes").style.color = "darkblue";
+      document.getElementById("seconds").style.color = "darkblue";
+
+      document.getElementById("title").style.color = "blue";
+      document.getElementById("count").style.color = "red";
+      document.getElementById("stats").style.color = "red";
+      document.getElementById("stats2").style.color = "red";
+
+      document.getElementById("button1").style.background='blue';
+      document.getElementById("button2").style.background='red';
+
+      //https://stackoverflow.com/questions/15071062/using-javascript-to-edit-css-gradient/15071347
+      var dom = document.getElementById('background'); dom.style.backgroundImage = "linear-gradient(red, blue)";
+      solveEnd(); 
       }      
        /*------------IF BLUE NEXT SOLUTION IS RED--------*/
 if (nextSolution == 'O' && totalSeconds > 0 && changeColor()==(gridSize*gridSize)){   
       nextSolution = 'X';
-      document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' font color='red'><b> red.</font></b>";
+      document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' font color='red'><b> RED</font></b>";
+
+      document.getElementById("time").style.color = "darkred";
+      document.getElementById("minutes").style.color = "darkred";
+      document.getElementById("seconds").style.color = "darkred";
+
+      document.getElementById("title").style.color = "red";
+      document.getElementById("count").style.color = "blue";
+      document.getElementById("stats").style.color = "blue";
+      document.getElementById("stats2").style.color = "blue";
+
+      document.getElementById("button1").style.background='red';
+      document.getElementById("button2").style.background='blue';
+
+      // https://stackoverflow.com/questions/15071062/using-javascript-to-edit-css-gradient/15071347
+      var dom = document.getElementById('background'); dom.style.backgroundImage = "linear-gradient(blue, red)";
       solveEnd();
       }   
       changeColor();   
