@@ -3,6 +3,7 @@
 <html> 
     <head> 
         <title> LightsOut</title>
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Limelight|Permanent+Marker&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -17,18 +18,22 @@ maximum-scale=1.0,
 user-scalable=no">
   </head>
 <body>
-<font size='+3'><label id="title">Lights Out</label></font><br><br>
+
+<div id="background" class="full-height">
+<label id="title">Lights Out</label><br>
 <label id="nextSolution"></label><br><br>
-<font size='+2'>Time: <b><label id="minutes">00</label>:<label id="seconds">00</label></b><label id="ready"></label></font>
-&nbsp&nbsp<button type="button" onclick="pause()">Pause</button> 
+<label id="time">Time:</label> <b><label id="minutes">00</label>:<label id="seconds">00</label></b>
+<label id="ready"></label>
+&nbsp&nbsp<button id="button1" type="button" onclick="pause()">Pause</button> 
 <p id="container"></p>
 <p id="count"></p>
-
-<!-- https://www.quackit.com/javascript/javascript_refresh_page.cfm -->
-<input type="button" value="New Game"
-onClick="document.location.reload(true)">
 <p id="stats"></p>
 <p id="stats2"></p>
+
+<!-- https://www.quackit.com/javascript/javascript_refresh_page.cfm -->
+<input id="button2" type="button" value="New Game" onClick="document.location.reload(true)">
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
