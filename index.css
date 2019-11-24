@@ -1,3 +1,38 @@
 .but {
     height:30px;width:30px;
 }
+div  {
+        /* https://www.w3schools.com/css/css3_gradients.asp */
+        background-image: linear-gradient(red, blue);
+
+            position:fixed;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+
+            text-align: center;
+}
+#title {
+    font-size: 24px;
+    color: blue;
+    font-family: 'Limelight', cursive;
+}
+p, label {
+    font-size: 16px;
+    font-family: 'Abril Fatface', cursive;
+}
+button, input {
+    font: 14px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#time, #minutes, #seconds {
+    color: darkblue;
+}
+#button1{
+    background-color: blue;
+}
+#button2{
+    background-color: red;
+}
