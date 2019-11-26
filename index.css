@@ -3,7 +3,7 @@
 }
 div  {
         /* https://www.w3schools.com/css/css3_gradients.asp */
-        background-image: linear-gradient(red, blue);
+        background-image: radial-gradient(blue,red);  
 
             position:fixed;
             top:0;
