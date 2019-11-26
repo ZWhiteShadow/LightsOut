@@ -100,7 +100,7 @@ function solve(){
        /*------------IF RED NEXT SOLUTION IS BLUE--------*/
 if (nextSolution == 'X' && totalSeconds > 0 && changeColor()==(gridSize*gridSize)){   
       nextSolution = 'O';
-      document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' font color='blue'><b> BLUE</font></b>";
+      document.getElementById("nextSolution").innerHTML = "<font size='+2' color="white">Solve for<font size='+3' font color='blue'><b> BLUE</font></b>";
      
       document.getElementById("time").style.color = "blue";
       document.getElementById("minutes").style.color = "blue";
@@ -123,7 +123,7 @@ if (nextSolution == 'X' && totalSeconds > 0 && changeColor()==(gridSize*gridSize
        /*------------IF BLUE NEXT SOLUTION IS RED--------*/
 if (nextSolution == 'O' && totalSeconds > 0 && changeColor()==(gridSize*gridSize)){   
       nextSolution = 'X';
-      document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' font color='red'><b> RED</font></b>";
+      document.getElementById("nextSolution").innerHTML = "<font size='+2' color="white">Solve for<font size='+3' font color='red'><b> RED</font></b>";
 
       document.getElementById("time").style.color = "red";
       document.getElementById("minutes").style.color = "red";
