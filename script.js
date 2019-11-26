@@ -102,9 +102,9 @@ if (nextSolution == 'X' && totalSeconds > 0 && changeColor()==(gridSize*gridSize
       nextSolution = 'O';
       document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' font color='blue'><b> BLUE</font></b>";
      
-      document.getElementById("time").style.color = "darkblue";
-      document.getElementById("minutes").style.color = "darkblue";
-      document.getElementById("seconds").style.color = "darkblue";
+      document.getElementById("time").style.color = "blue";
+      document.getElementById("minutes").style.color = "blue";
+      document.getElementById("seconds").style.color = "blue";
 
       document.getElementById("title").style.color = "blue";
       document.getElementById("count").style.color = "red";
@@ -115,7 +115,7 @@ if (nextSolution == 'X' && totalSeconds > 0 && changeColor()==(gridSize*gridSize
       document.getElementById("button2").style.background='red';
 
       //https://stackoverflow.com/questions/15071062/using-javascript-to-edit-css-gradient/15071347
-      var dom = document.getElementById('background'); dom.style.backgroundImage = "linear-gradient(red, blue)";
+      var dom = document.getElementById('background'); dom.style.backgroundImage = " radial-gradient(blue,red)";
       solveEnd(); 
       }      
        /*------------IF BLUE NEXT SOLUTION IS RED--------*/
@@ -123,9 +123,9 @@ if (nextSolution == 'O' && totalSeconds > 0 && changeColor()==(gridSize*gridSize
       nextSolution = 'X';
       document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' font color='red'><b> RED</font></b>";
 
-      document.getElementById("time").style.color = "darkred";
-      document.getElementById("minutes").style.color = "darkred";
-      document.getElementById("seconds").style.color = "darkred";
+      document.getElementById("time").style.color = "red";
+      document.getElementById("minutes").style.color = "red";
+      document.getElementById("seconds").style.color = "red";
 
       document.getElementById("title").style.color = "red";
       document.getElementById("count").style.color = "blue";
@@ -136,7 +136,7 @@ if (nextSolution == 'O' && totalSeconds > 0 && changeColor()==(gridSize*gridSize
       document.getElementById("button2").style.background='blue';
 
       // https://stackoverflow.com/questions/15071062/using-javascript-to-edit-css-gradient/15071347
-      var dom = document.getElementById('background'); dom.style.backgroundImage = "linear-gradient(blue, red)";
+      var dom = document.getElementById('background'); dom.style.backgroundImage = " radial-gradient(red,blue)";
       solveEnd();
       }   
       changeColor();   
