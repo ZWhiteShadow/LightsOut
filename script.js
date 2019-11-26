@@ -112,7 +112,9 @@ if (nextSolution == 'X' && totalSeconds > 0 && changeColor()==(gridSize*gridSize
       document.getElementById("stats2").style.color = "red";
 
       document.getElementById("button1").style.background='blue';
+      document.getElementById("button1").style.color = "white";
       document.getElementById("button2").style.background='red';
+      document.getElementById("button2").style.color = "black";
 
       //https://stackoverflow.com/questions/15071062/using-javascript-to-edit-css-gradient/15071347
       var dom = document.getElementById('background'); dom.style.backgroundImage = " radial-gradient(blue,red)";
@@ -133,7 +135,9 @@ if (nextSolution == 'O' && totalSeconds > 0 && changeColor()==(gridSize*gridSize
       document.getElementById("stats2").style.color = "blue";
 
       document.getElementById("button1").style.background='red';
+      document.getElementById("button1").style.color = "black";
       document.getElementById("button2").style.background='blue';
+      document.getElementById("button2").style.color = "white";
 
       // https://stackoverflow.com/questions/15071062/using-javascript-to-edit-css-gradient/15071347
       var dom = document.getElementById('background'); dom.style.backgroundImage = " radial-gradient(red,blue)";
