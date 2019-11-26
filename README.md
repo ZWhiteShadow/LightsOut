@@ -6,4 +6,4 @@ A lights out game 1x1 up to 10x10
 Colrized it!
 You may need to adjust the ZOOM!
 
-TRY ME! : http://htmlpreview.github.io/?https://github.com/ZWhiteShadow/LightsOut/blob/master/Game.html
+TRY ME! : www.bit.ly/2rpdA7D
