@@ -101,16 +101,8 @@ function solve(){
 if (nextSolution == 'X' && totalSeconds > 0 && changeColor()==(gridSize*gridSize)){   
       nextSolution = 'O';
       document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' font color='blue'><b> BLUE</font></b>";
-      color1("time","blue");
-      color1("minutes","blue");
-      color1("seconds","blue");
-      color1("title","blue");
-
-      color1("count","red");
-      color1("stats","red");
-      color1("stats2","red");
-      color2("button1","blue");
-      color2("button2","red");
+      color1(["time","minutes","seconds","title"],"blue",["count","stats","stats2"],"red");
+      color2("button1","blue"); color2("button2","red");
 
       //https://stackoverflow.com/questions/15071062/using-javascript-to-edit-css-gradient/15071347
       var dom = document.getElementById('background'); dom.style.backgroundImage = " radial-gradient(blue,red)";
@@ -122,16 +114,8 @@ if (nextSolution == 'O' && totalSeconds > 0 && changeColor()==(gridSize*gridSize
       document.getElementById("nextSolution").innerHTML = "<font size='+2'>Solve for<font size='+3' font color='red'><b> RED</font></b>";
       
       //document.getElementById("time").style.color = "red";
-      color1("time","red");
-      color1("minutes","red");
-      color1("seconds","red");
-      color1("title","red");
-
-      color1("count","blue");
-      color1("stats","blue");
-      color1("stats2","blue");
-      color2("button1","red");
-      color2("button2","blue");
+      color1(["time","minutes","seconds","title"],"red",["count","stats","stats2"],"blue");
+      color2("button1","red"); color2("button2","blue");
 
       // https://stackoverflow.com/questions/15071062/using-javascript-to-edit-css-gradient/15071347
       var dom = document.getElementById('background'); dom.style.backgroundImage = " radial-gradient(red,blue)";
@@ -182,10 +166,15 @@ function min_and_sec(time){
     return "<b>" + time.toFixed(0) + "</b>" + " seconds."
 }
 
-function color1(id, color){
-    document.getElementById(id).style.color = color; 
+function color1(id, color, id2, color2){
+    for(var i=0; i< id.length; i++) {
+      document.getElementById(id[i]).style.color = color; 
     }
+    for(var i=0; i< id2.length; i++) {
+      document.getElementById(id2[i]).style.color = color2;  
+    }
+  }
 
 function color2(id, color){
-  document.getElementById(id).style.background=color;
+   document.getElementById(id).style.background=color;
     }
