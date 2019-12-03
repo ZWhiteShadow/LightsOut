@@ -1,29 +1,33 @@
-<!DOCTYPE html> 
-  
-<html> 
-    <head> 
-        <title> LightsOut</title>
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Limelight|Permanent+Marker&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  </head>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> LightsOut</title>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Limelight|Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
 <body>
 
-<div id="background" class="full-height">
-<label id="title">Lights Out</label><br>
-<label id="nextSolution"></label><br><br>
-<label id="time">Time:</label> <b><label id="minutes">00</label>:<label id="seconds">00</label></b>
-<label id="ready"></label>
-&nbsp&nbsp<button id="button1" type="button" onclick="pause()">Pause</button> 
-<p id="container"></p>
-<p id="count"></p>
-<p id="stats"></p>
-<p id="stats2"></p>
+  <div id="background" class="full-height">
+    <label id="title">Lights Out</label><br>
+    <label id="nextSolution"></label><br><br>
+    <label id="time">Time:</label> <b><label id="minutes">00</label>:<label id="seconds">00</label></b>
+    <label id="ready"></label>
+    &nbsp&nbsp<button id="button1" type="button" onclick="pause()">Pause</button>
+    <p id="container"></p>
+    <p id="count"></p>
+    <p id="stats"></p>
+    <p id="stats2"></p>
 
-<!-- https://www.quackit.com/javascript/javascript_refresh_page.cfm -->
-<button id="button2" type="button" onClick="document.location.reload(true)">New Game</button>
-</div>
+    <!-- https://www.quackit.com/javascript/javascript_refresh_page.cfm -->
+    <button id="button2" type="button" onClick="document.location.reload(true)">New Game</button>
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
