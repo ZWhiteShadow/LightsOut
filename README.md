@@ -32,21 +32,29 @@ The project expands the traditional game by allowing players to generate randomi
 
 ## Development Process
 
-Development progressed through frequent iterative updates, with commits focused on refining functionality, improving the interface, fixing bugs, and optimizing the experience across desktop and mobile devices.
+Development progressed through iterative improvements over several weeks, with regular commits focused on expanding functionality, refining the user interface, improving mobile compatibility, and simplifying the codebase.
 
 Commit history reflects work including:
 
-- Initial project setup and application structure
-- Separation of HTML, CSS, and JavaScript into dedicated files
-- User interface styling, color, and visual theme improvements
-- Mobile optimization and accessibility enhancements
-- Full-screen mode and restart functionality
-- Button behavior and interface refinements
-- Bug fixes and JavaScript troubleshooting
-- Code consolidation through new functions and array-based refactoring
-- Responsive layout and mobile compatibility testing
-- Documentation updates throughout development
-- Recent maintenance updates, including expanded project documentation and renaming **Game.html** to **index.html**
+- **Early November 2019**
+  - Created the initial project structure and README
+  - Added full-screen mode and restart functionality
+  - Refined interface text and user controls
+
+- **Mid November 2019**
+  - Fixed early JavaScript logic and input handling issues
+  - Separated the project into dedicated HTML, CSS, and JavaScript files
+  - Expanded visual styling with color themes, gradients, and interface improvements
+  - Began optimizing the application for mobile devices
+
+- **Late November 2019**
+  - Improved mobile accessibility and responsive behavior
+  - Enhanced button styling and user interface consistency
+  - Consolidated code through reusable functions and array-based refactoring
+  - Continued interface refinements and gameplay polishing
+
+- **Early December 2019**
+  - Performed mobile compatibility testing
 
 ---
 
