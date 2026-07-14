@@ -32,11 +32,21 @@ The project expands the traditional game by allowing players to generate randomi
 
 ## Development Process
 
-This project focused on building a configurable puzzle game rather than a fixed implementation.
+Development progressed through frequent iterative updates, with commits focused on refining functionality, improving the interface, fixing bugs, and optimizing the experience across desktop and mobile devices.
 
-Development included dynamically generating game boards of varying sizes, implementing the Lights Out game rules, randomizing puzzle layouts, tracking player performance statistics, and updating the interface in real time as the puzzle state changed.
+Commit history reflects work including:
 
-Building the project strengthened my understanding of JavaScript, algorithmic problem solving, DOM manipulation, state management, and event-driven programming.
+- Initial project setup and application structure
+- Separation of HTML, CSS, and JavaScript into dedicated files
+- User interface styling, color, and visual theme improvements
+- Mobile optimization and accessibility enhancements
+- Full-screen mode and restart functionality
+- Button behavior and interface refinements
+- Bug fixes and JavaScript troubleshooting
+- Code consolidation through new functions and array-based refactoring
+- Responsive layout and mobile compatibility testing
+- Documentation updates throughout development
+- Recent maintenance updates, including expanded project documentation and renaming **Game.html** to **index.html**
 
 ---
 
