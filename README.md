@@ -29,33 +29,38 @@ The project expands the traditional game by allowing players to generate randomi
 * CSS3
 
 ---
-
 ## Development Process
 
-Development progressed through iterative improvements over several weeks, with regular commits focused on expanding functionality, refining the user interface, improving mobile compatibility, and simplifying the codebase.
+Development progressed through frequent iterative improvements over approximately one month, with regular commits focused on expanding gameplay, improving usability, optimizing mobile compatibility, and refining the overall player experience.
 
 Commit history reflects work including:
 
-- **Early November 2019**
-  - Created the initial project structure and README
-  - Added full-screen mode and restart functionality
-  - Refined interface text and user controls
+### November 2–6, 2019
 
-- **Mid November 2019**
-  - Fixed early JavaScript logic and input handling issues
-  - Separated the project into dedicated HTML, CSS, and JavaScript files
-  - Expanded visual styling with color themes, gradients, and interface improvements
-  - Began optimizing the application for mobile devices
+- Created the initial project structure and core game framework.
+- Implemented the first playable version of the game.
+- Added fullscreen support and restart functionality.
+- Began documenting the project and refining the user interface.
 
-- **Late November 2019**
-  - Improved mobile accessibility and responsive behavior
-  - Enhanced button styling and user interface consistency
-  - Consolidated code through reusable functions and array-based refactoring
-  - Continued interface refinements and gameplay polishing
+### November 20–23, 2019
 
-- **Early December 2019**
-  - Performed mobile compatibility testing
+- Refined gameplay logic and resolved input validation issues.
+- Separated application logic into dedicated HTML, CSS, and JavaScript files.
+- Improved visual styling with color themes and interface enhancements.
+- Optimized the game for mobile devices and responsive layouts.
+- Continued code refinement and usability improvements.
 
+### November 25–26, 2019
+
+- Enhanced accessibility and mobile usability.
+- Refined interface colors, gradients, and button styling.
+- Consolidated application logic using reusable functions and arrays.
+- Improved code organization and maintainability through refactoring.
+
+### December 2, 2019
+
+- Performed final testing on mobile devices.
+- Completed final gameplay refinements and project polish.
 ---
 
 ## Skills Demonstrated
