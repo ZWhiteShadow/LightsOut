@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-  <title> LightsOut</title>
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Limelight|Permanent+Marker&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lights Out</title>
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
-
 <body>
+  <main id="background" class="game-card">
+    <header>
+      <h1 id="title">Lights Out</h1>
+      <p id="nextSolution" class="goal"></p>
+    </header>
 
-  <div id="background" class="full-height">
-    <label id="title">Lights Out</label><br>
-    <label id="nextSolution"></label><br><br>
-    <label id="time">Time:</label> <b><label id="minutes">00</label>:<label id="seconds">00</label></b>
-    <label id="ready"></label>
-    &nbsp&nbsp<button id="button1" type="button" onclick="pause()">Pause</button>
-    <p id="container"></p>
-    <p id="count"></p>
-    <p id="stats"></p>
-    <p id="stats2"></p>
+    <section class="status-bar" aria-label="Game controls">
+      <div class="timer">
+        <span id="time">Time</span>
+        <strong><span id="minutes">00</span>:<span id="seconds">00</span></strong>
+      </div>
+      <span id="ready"></span>
+      <button id="button1" type="button" onclick="pause()">Pause</button>
+    </section>
 
-    <!-- https://www.quackit.com/javascript/javascript_refresh_page.cfm -->
-    <button id="button2" type="button" onClick="document.location.reload(true)">New Game</button>
-  </div>
+    <div id="container" class="board" aria-label="Lights Out game board"></div>
+
+    <section class="stats" aria-live="polite">
+      <p id="count"></p>
+      <p id="stats"></p>
+      <p id="stats2"></p>
+    </section>
+
+    <button id="button2" type="button" onclick="document.location.reload()">New Game</button>
+  </main>
 
   <script src="script.js"></script>
 </body>
-
 </html>
